@@ -1,6 +1,6 @@
 ## Tutorial for authentication can be found here: https://docs.samsungknox.com/dev/knox-cloud-authentication/tutorial/tutorial-for-customers-generate-access-token/
 
-from pyktl import pyktl
+import pyktl
 import json
 import requests
 

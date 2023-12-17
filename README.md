@@ -20,6 +20,31 @@ pip install pycryptodome "pyjwt[crypto]"
 ```
 
 ## Usage
+
+Install using: 
+```
+pip install pyktl
+```
+
+### Assumptions 
+ - You have downloaded the Knox Certificate file (certificate.json)
+ - You have generated a Client Identifier (api-key) for accessing apis of Knox Cloud Services.
+
+### Intended Use
+The workflow for making api calls to Knox Cloud Services is divided into a portal workflow, and a programmatic workflow.
+Portal flow
+
+ - Download Certificate from Knox Api Portal
+ - Generate and Download ClientIdentifier (api-key) for a specific Knox Solution
+
+### Programmatic flow
+
+ - Call Knox api to generate an Api Access Token. This api call requires a signed ClientIdentifier, and specific contents of your Certificate (Public Key).
+ - Call Knox api for your intended workflow (eg: upload device, configure device etc). This api call requires your signed Api Access Token, and specific contents of your Certificate (Public Key).
+
+ - This utility py library helps generate signed clientIdentifiers, and signed accessTokens.
+
+## Included Examples
 Leverage the KnoxAccessToken.py & test_KmeApi.py examples that show successful authetnication to the Knox Mobile Enrollment ('KME') api.
 
 The example leverages a keys.json which is obtained using the SamsungKnox.com portal - view the Samsung tutorial for more details. 
@@ -37,7 +62,7 @@ You can also reference Samsung's authentication tutorail found here: https://doc
 I did attempt to keep only required method names, so not all methods in the docs will be available in pyktl.
 
 
-## Build & Install
+## Local Build & Install
 In order to build and install pyktl locally you can run the following commands:
 
 ```
