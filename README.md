@@ -8,11 +8,11 @@
 </div>
 
 
-# KnoxTokenLibary-Python
+# KnoxTokenLibary-Python ('pyktl')
 
 **This is not an offical Samsung library or repository**
 
-This is a python rewrite of the knox-token-library-js library written by Samsung.  The following code was used to build this project. https://www.npmjs.com/package/knox-token-library-js?activeTab=readme
+pyktl is a python rewrite of the knox-token-library-js library written by Samsung.  The following code was used to build this project. https://www.npmjs.com/package/knox-token-library-js?activeTab=readme
 
 The prerequesits for this library are: 
 ```
@@ -20,9 +20,7 @@ pip install pycryptodome "pyjwt[crypto]"
 ```
 
 ## Usage
-Tutorial for authentication can be found here: https://docs.samsungknox.com/dev/knox-cloud-authentication/tutorial/tutorial-for-customers-generate-access-token/. 
-
-You can also leverage the KnoxAccessToken.py & test_KmeApi.py examples that show successful authetnication to the Knox Mobile Enrollment ('KME') api.
+Leverage the KnoxAccessToken.py & test_KmeApi.py examples that show successful authetnication to the Knox Mobile Enrollment ('KME') api.
 
 The example leverages a keys.json which is obtained using the SamsungKnox.com portal - view the Samsung tutorial for more details. 
 The example also leverages clientId.json which includes the clientIds 
@@ -35,9 +33,12 @@ The example also leverages clientId.json which includes the clientIds
     "kai": ""
 }
 ```
+You can also reference Samsung's authentication tutorail found here: https://docs.samsungknox.com/dev/knox-cloud-authentication/tutorial/tutorial-for-customers-generate-access-token/. 
+I did attempt to keep only required method names, so not all methods in the docs will be available in pyktl.
+
 
 ## Build & Install
-In order to install the KTL you must build 
+In order to build and install pyktl locally you can run the following commands:
 
 ```
 python setup.py sdist bdist_wheel
