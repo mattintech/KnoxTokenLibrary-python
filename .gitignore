@@ -10,4 +10,4 @@ venv/
 #Project Specific
 keys.json
 clientId.json
-KnoxTokenLibrary.egg-info/
+pyktl.egg-info/
