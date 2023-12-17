@@ -1,6 +1,6 @@
 ## Tutorial for authentication can be found here: https://docs.samsungknox.com/dev/knox-cloud-authentication/tutorial/tutorial-for-customers-generate-access-token/
 
-from KnoxTokenLibrary import KnoxTokenLibrary
+from pyktl import pyktl
 import json
 import requests
 
@@ -11,7 +11,7 @@ with open(kcsKeysFile, "r") as file:
 publicKey = kcsCert['Public']
 
 def generateSignClientID(clientId):
-    signedClientId = KnoxTokenLibrary.generate_signed_client_identifier_jwt(kcsKeysFile, clientId)
+    signedClientId = pyktl.generate_signed_client_identifier_jwt(kcsKeysFile, clientId)
     return signedClientId
 
 def generateAccessToken(signedClientId):
@@ -37,7 +37,7 @@ def generateAccessToken(signedClientId):
     return accessToken
 
 def generateSignedAccessToken(accessToken):
-    result=KnoxTokenLibrary.generate_signed_access_token_jwt(kcsKeysFile, accessToken)
+    result=pyktl.generate_signed_access_token_jwt(kcsKeysFile, accessToken)
     return result
 
 def getAccessToken(clientId):

@@ -2,13 +2,12 @@
 .pyc
 build/
 dist/
+__pycache__
 
 #venv
 venv/
 
 #Project Specific
-rest.http
 keys.json
 clientId.json
-notes.txt
 KnoxTokenLibrary.egg-info/
