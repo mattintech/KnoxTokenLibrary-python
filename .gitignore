@@ -1,0 +1,14 @@
+#Python
+.pyc
+build/
+dist/
+
+#venv
+venv/
+
+#Project Specific
+rest.http
+keys.json
+clientId.json
+notes.txt
+KnoxTokenLibrary.egg-info/
