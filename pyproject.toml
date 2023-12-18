@@ -1,6 +1,6 @@
 [project]
 name = "pyktl"
-version = "0.3.2"
+version = "0.3.3"
 authors = [
   { name="Matt Hills", email="mattintech@gmail.com" },
 ]

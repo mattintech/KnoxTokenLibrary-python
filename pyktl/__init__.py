@@ -2,7 +2,7 @@ from .pyktl import generate_signed_client_identifier_jwt
 from .pyktl import generate_signed_access_token_jwt
 
 
-__version__ = "0.2.0"
+__version__ = "0.3.3"
 
 __title__ = "PyKTL"
 __description__ = "This library provides utility methods to generate and sign Knox Cloud Tokens using Python."
