@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='PyKTL',
-    version='0.3.3',
+    version='0.3.4',
     description='This library provides utility methods to generate and sign Knox Cloud Tokens using Python.',
     long_description=open('README.md').read(),  # Read the long description from a file
     long_description_content_type='text/markdown',  # Specify the type of markup used (reStructuredText in this case)
@@ -11,7 +11,8 @@ setup(
     url='https://github.com/mattintech/KnoxTokenLibrary-python',
     packages=find_packages(),
     install_requires=[
+        'PyJWT',
+        'cryptography',
         'pycryptodome',
-        'pyjwt[crypto]'
     ],
 )

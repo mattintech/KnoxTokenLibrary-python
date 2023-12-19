@@ -1,6 +1,11 @@
 [project]
-name = "pyktl"
-version = "0.3.3"
+name = "PyKTL"
+version = "0.3.4"
+dependencies = [
+  "PyJWT",
+  "pycryptodome",
+  "cryptography"
+]
 authors = [
   { name="Matt Hills", email="mattintech@gmail.com" },
 ]

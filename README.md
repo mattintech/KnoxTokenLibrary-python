@@ -1,5 +1,5 @@
 ![status: active](https://img.shields.io/badge/status-active-green.svg)
-![status: release](https://img.shields.io/badge/release-0.3.2-red.svg)
+![status: release](https://img.shields.io/badge/release-0.3.4-red.svg)
 ![status: branch](https://img.shields.io/badge/branch-master-lightgrey.svg)
 
 <div style="text-align: right"> 
