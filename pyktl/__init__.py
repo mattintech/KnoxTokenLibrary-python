@@ -1,6 +1,3 @@
-from .pyktl import generate_signed_client_identifier_jwt
-from .pyktl import generate_signed_access_token_jwt
-
 
 __version__ = "0.3.3"
 
@@ -15,3 +12,7 @@ __email__ = "mattintech@gmail.com"
 
 __license__ = "MIT"
 __copyright__ = "Copyright 2023 Matt Hills"
+
+from .pyktl import generate_signed_client_identifier_jwt
+from .pyktl import generate_signed_access_token_jwt
+
