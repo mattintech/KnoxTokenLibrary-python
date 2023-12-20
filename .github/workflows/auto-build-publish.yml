@@ -2,10 +2,8 @@ name: Auto Build and Publish
 
 on:
   push:
-    branches:
-        - master
     tags:
-        - v*
+        - v0.*
 
 permissions:
   contents: read
