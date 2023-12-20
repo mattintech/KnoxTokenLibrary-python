@@ -1,6 +1,6 @@
-![status: active](https://img.shields.io/badge/status-active-green.svg)
-![status: release](https://img.shields.io/badge/release-0.3.5-blue.svg)
-![status: branch](https://img.shields.io/badge/branch-master-lightgrey.svg)
+[![BuildStatus](https://github.com/mattintech/KnoxTokenLibrary-python/workflows/CI/badge.svg)](https://github.com/mattintech/KnoxTokenLibrary-python/actions/workflows/auto-build-publish.yml)
+[![PyPI Version](https://img.shields.io/pypi/v/PyKTL.svg)](https://pypi.org/project/PyKTL/)
+[![Active branch](https://img.shields.io/badge/branch-master-lightgrey.svg)](https://github.com/mattintech/KnoxTokenLibrary-python/tree/master/)
 
 <div style="text-align: right"> 
     <a href="https://www.buymeacoffee.com/mattintech" target="_blank">
