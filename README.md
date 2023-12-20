@@ -14,11 +14,6 @@
 
 pyktl is a python rewrite of the knox-token-library-js library written by Samsung.  The following code was used to build this project. https://www.npmjs.com/package/knox-token-library-js?activeTab=readme
 
-The prerequesits for this library are: 
-```
-pip install pycryptodome "pyjwt[crypto]"
-```
-
 ## Usage
 
 Install using: 
