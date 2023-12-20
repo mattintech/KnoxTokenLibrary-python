@@ -8,7 +8,7 @@
 </div>
 
 
-# KnoxTokenLibary-Python ('PyKTL')
+# KnoxTokenLibrary-Python ('PyKTL')
 
 **This is not an offical Samsung library or repository**
 
