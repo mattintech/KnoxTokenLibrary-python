@@ -1,5 +1,5 @@
 
-__version__ = "0.3.3"
+__version__ = "0.3.5"
 
 __title__ = "PyKTL"
 __description__ = "This library provides utility methods to generate and sign Knox Cloud Tokens using Python."

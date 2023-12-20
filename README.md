@@ -1,5 +1,5 @@
 ![status: active](https://img.shields.io/badge/status-active-green.svg)
-![status: release](https://img.shields.io/badge/release-0.3.4-red.svg)
+![status: release](https://img.shields.io/badge/release-0.3.5-blue.svg)
 ![status: branch](https://img.shields.io/badge/branch-master-lightgrey.svg)
 
 <div style="text-align: right"> 
@@ -8,7 +8,7 @@
 </div>
 
 
-# KnoxTokenLibary-Python ('pyktl')
+# KnoxTokenLibary-Python ('PyKTL')
 
 **This is not an offical Samsung library or repository**
 
@@ -18,7 +18,7 @@ pyktl is a python rewrite of the knox-token-library-js library written by Samsun
 
 Install using: 
 ```
-pip install pyktl
+pip install PyKTL
 ```
 
 ### Assumptions 
@@ -27,12 +27,13 @@ pip install pyktl
 
 ### Intended Use
 The workflow for making api calls to Knox Cloud Services is divided into a portal workflow, and a programmatic workflow.
-Portal flow
+
+#### Portal flow
 
  - Download Certificate from Knox Api Portal
  - Generate and Download ClientIdentifier (api-key) for a specific Knox Solution
 
-### Programmatic flow
+#### Programmatic flow
 
  - Call Knox api to generate an Api Access Token. This api call requires a signed ClientIdentifier, and specific contents of your Certificate (Public Key).
  - Call Knox api for your intended workflow (eg: upload device, configure device etc). This api call requires your signed Api Access Token, and specific contents of your Certificate (Public Key).
@@ -40,7 +41,7 @@ Portal flow
  - This utility py library helps generate signed clientIdentifiers, and signed accessTokens.
 
 ## Included Examples
-Leverage the KnoxAccessToken.py & test_KmeApi.py examples that show successful authetnication to the Knox Mobile Enrollment ('KME') api.
+Leverage the KnoxAccessToken.py & samples/kme_getDeviceList.py examples that show successful authetnication to the Knox Mobile Enrollment ('KME') api.
 
 The example leverages a keys.json which is obtained using the SamsungKnox.com portal - view the Samsung tutorial for more details. 
 The example also leverages clientId.json which includes the clientIds 
@@ -54,20 +55,16 @@ The example also leverages clientId.json which includes the clientIds
 }
 ```
 You can also reference Samsung's authentication tutorail found here: https://docs.samsungknox.com/dev/knox-cloud-authentication/tutorial/tutorial-for-customers-generate-access-token/. 
-I did attempt to keep only required method names, so not all methods in the docs will be available in pyktl.
+I did attempt to keep only required method names, so not all methods found in the nodejs/java/NuGet package will be available in PyKTL.
 
 
 ## Local Build & Install
 In order to build and install pyktl locally you can run the following commands:
 
 ```
-python setup.py sdist bdist_wheel
+python setup.py sdist
 pip install .
 ```
 
-Note - the above requires prerequesit wheel
-
-```
-pip install wheel
-```
-
+## KDP API Support
+While no testing was done using the PyKTL and the Knox Deployment Program API - it is believed it should still work.  Authentication between the KCS APIs and KCS APIs appears to be the same.
