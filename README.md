@@ -40,8 +40,8 @@ The workflow for making api calls to Knox Cloud Services is divided into a porta
 
  - This utility py library helps generate signed clientIdentifiers, and signed accessTokens.
 
-## Included Examples
-Leverage the KnoxAccessToken.py & samples/kme_getDeviceList.py examples that show successful authetnication to the Knox Mobile Enrollment ('KME') api.
+## Examples
+Leverage examples from [here](https://github.com/mattintech/KnoxCloudService-Python).
 
 The example leverages a keys.json which is obtained using the SamsungKnox.com portal - view the Samsung tutorial for more details. 
 The example also leverages clientId.json which includes the clientIds 
