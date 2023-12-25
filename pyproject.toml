@@ -1,6 +1,6 @@
 [project]
 name = "PyKTL"
-version = "0.3.7"
+version = "0.3.8"
 dependencies = [
   "PyJWT",
   "pycryptodome",
@@ -19,5 +19,5 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/mattintech/KnoxTokenLibrary-python"
-Issues = "https://github.com/mattintech/KnoxTokenLibrary-python/issues"
+Homepage = "https://github.com/mattintech/PyKTL"
+Issues = "https://github.com/mattintech/PyKTL/issues"

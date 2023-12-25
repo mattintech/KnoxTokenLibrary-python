@@ -1,9 +1,9 @@
 
-__version__ = "0.3.7"
+__version__ = "0.3.8"
 
 __title__ = "PyKTL"
 __description__ = "This library provides utility methods to generate and sign Knox Cloud Tokens using Python."
-__url__ = "https://github.com/mattintech/KnoxTokenLibrary-python"
+__url__ = "https://github.com/mattintech/PyKTL"
 __uri__ = __url__
 __doc__ = f"{__description__} <{__uri__}>"
 
